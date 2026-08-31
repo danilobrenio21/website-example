@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selected Works & Web Portfolio</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: #f3f4f6;
+    }
+
+    /* Ambient Glow Background Effect */
+    .glow-bg {
+      background: radial-gradient(circle at 50% 10%, rgba(99, 102, 241, 0.15), transparent 45%),
+                  radial-gradient(circle at 80% 60%, rgba(236, 72, 153, 0.1), transparent 50%),
+                  radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1), transparent 50%);
+    }
+
+    /* Modern Card Hover Effects */
+    .project-card {
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(12px);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.35);
+      border-color: rgba(129, 140, 248, 0.5);
+    }
+  </style>
+</head>
+
+<body class="glow-bg min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+  <header class="w-full border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-18 flex items-center justify-between py-4">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30">
+          ✦
+        </div>
+        <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+          Featured Works
+        </span>
+      </div>
+
+      <a href="#contact" class="text-sm font-medium px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 hover:border-indigo-400 hover:text-indigo-300 transition-all">
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16 sm:py-24 flex-1">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold mb-6 tracking-wide uppercase">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Available for New Projects
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+        Websites Built for <br />
+        <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
+          Speed, Impact & Growth
+        </span>
+      </h1>
+      <p class="text-slate-400 text-base sm:text-lg">
+        Explore live client platforms, e-commerce stores, and high-conversion landing pages created by our team.
+      </p>
+    </div>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="project-card group rounded-2xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col">
+        <div class="relative overflow-hidden aspect-video bg-slate-800">
+          <img 
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+            alt="Project Preview" 
+            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                E-Commerce
+              </span>
+              <span class="text-xs text-slate-400">2026</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-300 transition-colors">
+              Nova Apparel Store
+            </h3>
+            
+            <p class="text-sm text-slate-400 leading-relaxed mb-6">
+              A high-converting minimalist online retail shop with automated checkout and mobile-first experience.
+            </p>
+          </div>
+
+          <a 
+            href="https://example.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-slate-800/80 hover:bg-indigo-600 text-sm font-semibold text-white transition-all group-hover:shadow-lg group-hover:shadow-indigo-600/30"
+          >
+            <span>Visit Live Website</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card group rounded-2xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col">
+        <div class="relative overflow-hidden aspect-video bg-slate-800">
+          <img 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" 
+            alt="Project Preview" 
+            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                Corporate & SaaS
+              </span>
+              <span class="text-xs text-slate-400">2026</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+              Apex Logistics Portal
+            </h3>
+            
+            <p class="text-sm text-slate-400 leading-relaxed mb-6">
+              B2B company website with real-time shipment booking forms and interactive analytics dashboard.
+            </p>
+          </div>
+
+          <a 
+            href="https://example.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-slate-800/80 hover:bg-purple-600 text-sm font-semibold text-white transition-all group-hover:shadow-lg group-hover:shadow-purple-600/30"
+          >
+            <span>Visit Live Website</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card group rounded-2xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col">
+        <div class="relative overflow-hidden aspect-video bg-slate-800">
+          <img 
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" 
+            alt="Project Preview" 
+            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                Hospitality / Brand
+              </span>
+              <span class="text-xs text-slate-400">2026</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+              The Bistro Lounge
+            </h3>
+            
+            <p class="text-sm text-slate-400 leading-relaxed mb-6">
+              Interactive restaurant landing page featuring digital menus, reservations, and location integration.
+            </p>
+          </div>
+
+          <a 
+            href="https://example.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-slate-800/80 hover:bg-emerald-600 text-sm font-semibold text-white transition-all group-hover:shadow-lg group-hover:shadow-emerald-600/30"
+          >
+            <span>Visit Live Website</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="mt-24 p-8 sm:p-12 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-950 text-center relative overflow-hidden">
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3">Ready to build your next website?</h2>
+      <p class="text-slate-400 max-w-md mx-auto mb-6 text-sm sm:text-base">
+        Let's create a responsive, high-performing web presence for your brand.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a 
+          href="mailto:contact@yourbrand.com" 
+          class="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 transition-all transform hover:-translate-y-0.5"
+        >
+          Send Us an Email
+        </a>
+        <a 
+          href="https://wa.me/" 
+          target="_blank"
+          class="px-6 py-3 rounded-full border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-semibold text-sm transition-all"
+        >
+          Message on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 All Rights Reserved. Designed & Developed for high performance.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
