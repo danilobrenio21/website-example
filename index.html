@@ -12,13 +12,14 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
     
-    body {
+    html, body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #050505;
+      background-color: #050505 !important;
       color: #ffffff;
+      min-height: 100vh;
     }
 
-    /* Ambient Background Glow (Yellow & Purple accents) */
+    /* Ambient Background Glow */
     .glow-bg {
       background: radial-gradient(circle at 50% 0%, rgba(250, 204, 21, 0.08), transparent 40%),
                   radial-gradient(circle at 90% 40%, rgba(147, 51, 234, 0.12), transparent 45%),
@@ -54,14 +55,14 @@
 
 <body class="glow-bg min-h-screen flex flex-col justify-between selection:bg-yellow-400 selection:text-black">
 
-  <header class="w-full border-b border-neutral-800 bg-[#0a0a0a]/80 backdrop-blur-md sticky top-0 z-50">
+  <header class="w-full border-b border-neutral-900 bg-black sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
       
       <a href="#" class="flex items-center">
         <img 
           src="image.jpg" 
           alt="VPH Media Production Logo" 
-          class="h-9 sm:h-12 w-auto object-contain"
+          class="h-9 sm:h-12 w-auto object-contain block"
         />
       </a>
 
@@ -79,21 +80,20 @@
 
   <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 flex-1 w-full">
     <div class="text-center max-w-3xl mx-auto mb-14 sm:mb-20">
+      
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-yellow-400/30 bg-yellow-400/10 text-yellow-400 text-xs font-semibold mb-6 tracking-wide uppercase">
         <span class="w-2 h-2 rounded-full bg-yellow-400 animate-ping"></span>
         Portfolio & Live Showcases
       </div>
       
-      <div class="mb-4">
-        <span class="inline-block bg-yellow-400 text-black font-extrabold text-2xl sm:text-4xl md:text-5xl px-4 py-1.5 rounded-xl tracking-tight uppercase shadow-lg shadow-yellow-400/20">
-          High-Performance Websites
-        </span>
-      </div>
-
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-5">
-        <span class="text-black bg-white px-3 py-0.5 rounded-lg mr-2 inline-block">Built for</span>
-        <span class="text-yellow-400">Growth & Conversion</span>
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight uppercase leading-tight mb-4 text-white">
+        High-Performance Websites
       </h1>
+
+      <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-6">
+        <span class="text-white">Built for</span>
+        <span class="text-yellow-400 ml-1.5">Growth & Conversion</span>
+      </h2>
 
       <p class="text-neutral-400 text-sm sm:text-lg max-w-xl mx-auto px-2">
         Explore our curated selection of digital experiences, business websites, and client showcases built by <span class="text-white font-medium">VPH Media Production</span>.
@@ -102,7 +102,7 @@
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
-      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d]/80 overflow-hidden flex flex-col">
+      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d] overflow-hidden flex flex-col">
         <div class="relative overflow-hidden aspect-video bg-neutral-900">
           <img 
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
@@ -141,7 +141,7 @@
         </div>
       </div>
 
-      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d]/80 overflow-hidden flex flex-col">
+      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d] overflow-hidden flex flex-col">
         <div class="relative overflow-hidden aspect-video bg-neutral-900">
           <img 
             src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" 
@@ -180,7 +180,7 @@
         </div>
       </div>
 
-      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d]/80 overflow-hidden flex flex-col">
+      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d] overflow-hidden flex flex-col">
         <div class="relative overflow-hidden aspect-video bg-neutral-900">
           <img 
             src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" 
@@ -219,7 +219,7 @@
         </div>
       </div>
 
-      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d]/80 overflow-hidden flex flex-col">
+      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d] overflow-hidden flex flex-col">
         <div class="relative overflow-hidden aspect-video bg-neutral-900">
           <img 
             src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" 
@@ -258,7 +258,7 @@
         </div>
       </div>
 
-      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d]/80 overflow-hidden flex flex-col">
+      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d] overflow-hidden flex flex-col">
         <div class="relative overflow-hidden aspect-video bg-neutral-900">
           <img 
             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" 
@@ -297,7 +297,7 @@
         </div>
       </div>
 
-      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d]/80 overflow-hidden flex flex-col">
+      <div class="project-card group rounded-2xl border border-neutral-800 bg-[#0d0d0d] overflow-hidden flex flex-col">
         <div class="relative overflow-hidden aspect-video bg-neutral-900">
           <img 
             src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=800&q=80" 
@@ -368,7 +368,7 @@
     </section>
   </main>
 
-  <footer class="border-t border-neutral-900 bg-[#030303] py-8 text-center text-xs tracking-wider text-neutral-400 font-semibold uppercase px-4">
+  <footer class="border-t border-neutral-900 bg-black py-8 text-center text-xs tracking-wider text-neutral-400 font-semibold uppercase px-4">
     <p>2026 VPH MEDIA PRODUCTION ALL RIGHTS RESERVE</p>
   </footer>
 
